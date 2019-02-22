@@ -1,7 +1,7 @@
 require_relative './class_methods_module.rb'
 require_relative './dance_module.rb'
 
-=begin class Dancer 
+class Dancer 
   include Dance #instance methods
   extend MetaDancing #class methods
   attr_accessor :name 
@@ -9,10 +9,6 @@ require_relative './dance_module.rb'
   def initialize(name)
     @name = name 
   end 
-  =end 
+  
+ end 
  
- 
-class Dancer
-  extend FancyDance::ClassMethods
-  include FancyDance::InstanceMethods
-end 
